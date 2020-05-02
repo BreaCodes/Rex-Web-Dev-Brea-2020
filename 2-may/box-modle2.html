@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
+        .box {
             border: 2px solid red;
-            padding:10pxS;
+            padding: 10px;
+            background-color: blue;
+            opacity: 0.3;
+            transition: opacity 4s, font-size 3s, transform 0.9s;
+            font-size: 20px;
+            transform: scale(1.2);
+            width: 20%;
+            height: 30%;
+            max-width: 150px;
+            min-width: 120px;
+            margin: 25px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .box:hover {
+            opacity: 1;
+            font-size: 40px;
+            background-color: blueviolet;
+            transform:skew(20deg)
+            /*transform:translate(20px,-10px):*/
+            /*trabsform:scale(1.2) rotate(-120deg)*/
+            
         }
     </style>
 </head>
+
 <body>
     <div class="box">Hello</div>
+    <div class="box">I Am</div>
+    <div class="box">Brea Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est alias at distinctio laborum expedita ex doloribus tenetur dolorem, minima suscipit architecto quam accusantium eligendi? Dicta, quisquam! Inventore, autem itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga praesentium maxime tenetur, molestias eos quisquam? Fuga sequi obcaecati ad placeat assumenda, asperiores quia id corrupti eligendi nostrum doloremque similique!</div>
 </body>
+
 </html>
