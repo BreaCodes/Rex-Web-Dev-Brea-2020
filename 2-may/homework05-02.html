@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breas Calculator</title>
+    <style>
+        body{
+            background-color:#0a000a ;
+        }
+        .box{
+            background-color: #453b45;
+            height: 300px;
+            width: 290px;
+            border-radius: 10px;
+            top: 80px;
+            bottom: 40px;
+            
+        }
+        .display
+        {background-color:#671967;
+        width: 220px;
+        left: 15px;
+        top: 20px;
+        height: 40px;
+        }
+        .display input{
+            position: relative;
+            left: 4px;
+            top: 2px;
+            height: 35px;
+            color:#320032 ;
+            background-color:#a700a7 ;
+            font-size: 22px;
+            text-align: right;
+
+        }
+        .key
+        {position: relative;
+        top: 15px;}
+        .button{
+            width: 40px;
+            height: 30px;
+            border:none;
+            border-radius: 8px;
+            margin-left: 17px;
+            border-top: 2px solid top: transparent;
+        }
+        .button.gray
+        {
+            color: gray;
+            background-color: indigo;
+            border-bottom:2px solid #ffa7ff ;
+            border-bottom: 2px solid #ffa7ff ;
+        }
+        .button.black{
+            color: black;
+            background-color: #4f314f;
+            border-bottom: black 2px solid;
+
+        }
+        .button.purple{
+            color: #1e001e;
+            background-color: blueviolet;
+            border-bottom: 2px black solid;
+            border-top: 2px #303030 solid;
+
+        }
+        p{
+            line-height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="display"><input type="text" readonly size="20" id="d"></div>
+        <div class="key">
+            <p>
+                <input type="button" class="button gray" value="mrc">
+                <input type="button" class="button gray" value="m-">
+                <input type="button" class="button gray" value="m+">
+                <input type="button" class="button black" value="/">
+            </p>
+            <p>
+                <input type="button" class="button purple" value="7">
+                <input type="button" class="button purple" value="8">
+                <input type="button" class="button purple" value="9">
+                <input type="button" class="button black" value="*">
+
+            </p>
+            <p>
+                <input type="button" class="button purple" value="4">
+                <input type="button" class="button purple" value="5">
+                <input type="button" class="button purple" value="6">
+                <input type="button" class="button black" value="-">
+
+            </p>
+            <p>
+                <input type="button" class="button purple"value="1">
+                <input type="button" class="button purple" value="2">
+                <input type="button" class="button purple" value="3">
+                <input type="button" class="button black" value="+">
+
+            </p>
+            <p>
+                <input type="button" class="button purple" value="0">
+                <input type="button" class="button purple" value=".">
+                <input type="button" class="button purple" value="C">
+                <input type="button"class="button black" value="=">
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
