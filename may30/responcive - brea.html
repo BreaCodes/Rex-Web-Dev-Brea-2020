@@ -37,9 +37,8 @@
         }
 
         #leftbox {
-            background-color: rgb(152, 152, 141);
             width: 100%;
-            height: 130px;
+            height: 180px;
         }
 
         #pagecontent {
@@ -61,17 +60,19 @@
         }
 
         #nav ul li a:hover {
-            background-color: rgb(159, 159, 211);
+            background-color: blue;
         }
 
-        #nav ul li a:link 
-        {
+        #nav ul li a:link {
             display: inline-block;
             width: 100%;
             background-color: cyan;
             height: 35px;
             padding-left: 10px;
             line-height: 35px;
+            text-decoration: non;
+            color: #ffffff;
+            transition: background-color 0.2s;
         }
 
         #nav ul {
@@ -81,11 +82,36 @@
         #nav ul li {
             padding: 8px;
             width: 100%;
-           
             height: 35px;
         }
 
-        
+        #leftbox ul li a:hover {
+            background-color: rgb(220, 127, 236);
+        }
+
+        #leftbox ul li a:link {
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(126, 129, 167);
+            height: 45px;
+            padding-left: 10px;
+            line-height: 35px;
+            text-decoration: non;
+            color: #000000;
+            transition: background-color 0.6s;
+
+        }
+
+        #leftbox ul {
+            list-style-type: none;
+        }
+
+        #leftbox ul li {
+            padding: 8px;
+            width: 100%;
+            height: 29px;
+        }
+
 
         /*styles for large device*/
         @media(min-width: 1000px) {
@@ -129,7 +155,15 @@
         </ul>
     </nav>
 
-    <section id="leftbox">section</section>
+    <section id="leftbox">
+        <ul>
+            <li><a href="#">Morning</a></li>
+            <li><a href="#">Mid Morning</a></li>
+            <li><a href="#">Afternoon</a></li>
+            <li><a href="#">Night</a></li>
+            <li><a href="#">Late Night</a></li>
+        </ul>
+    </section>
     <section id="pagecontent">section</section>
     <aside id="aside">aside</aside>
     <footer id="footer">footer</footer>

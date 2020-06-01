@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #header {
+            background-color: rgb(152, 152, 230);
+            width: 100%;
+            height: 85px;
+            padding-top: 15px;
+            text-align: center;
+            color: darkblue;
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 40px;
+            letter-spacing: 3px;
+            text-shadow: 1px 2px 4px rgb(200, 200, 135)
+        }
+
+        #nav {
+            width: 100%;
+            height: 140px;
+            background-color: rgb(219, 188, 212);
+        }
+
+        #leftbox {
+            width: 100%;
+            height: 250px;
+            background-color: rgb(126, 129, 167);
+        }
+
+        #pagecontent {
+            width: 100%;
+            /* height: 159px; */
+        }
+
+        #aside {
+            background-color: rgb(152, 152, 139);
+            width: 100%;
+            height: 170px;
+        }
+
+        #footer {
+            background-color: rgb(152, 152, 187);
+            width: 100%;
+            height: 65px;
+        }
+
+        #nav ul li a:hover {
+            background-color: rgb(145, 153, 153);
+        }
+
+        #nav ul li a:link {
+            display: inline-block;
+            width: 100%;
+
+            height: 35px;
+            padding-left: 10px;
+            line-height: 35px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+
+        #nav ul {
+            list-style-type: none;
+        }
+
+        #nav ul li {
+
+            width: 100%;
+            height: 35px;
+        }
+
+
+
+        /* leftbox styles */
+        #leftbox ul li a:hover {
+            background-color: rgb(220, 127, 236);
+        }
+
+        #leftbox ul li a:link {
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(126, 129, 167);
+            height: 45px;
+            padding-left: 10px;
+            line-height: 45px;
+            text-decoration: none;
+            color: #000000;
+            transition: background-color 0.6s;
+        }
+
+        #leftbox ul {
+            list-style-type: none;
+        }
+
+        #leftbox ul li {
+            width: 100%;
+            height: 45px;
+        }
+
+        #dh {
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0px 2px 4px rgb(194, 194, 65);
+            font-size: 25px;
+        }
+
+        .tod {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .ttod {
+            float: left;
+            width: 50%;
+            height: 630px;
+        }
+
+        .btod {
+            clear: left;
+        }
+
+
+        /*styles for large device*/
+        @media(min-width: 1000px) {
+
+            #leftbox,
+            #pagecontent,
+            #aside {
+                float: left;
+            }
+
+            #leftbox {
+                width: 15%;
+                height: 700px;
+            }
+
+            #pagecontent {
+                width: 70%;
+                height: 700px;
+            }
+
+            #aside {
+                width: 15%;
+                height: 700px;
+            }
+
+            #footer {
+                clear: left;
+            }
+
+            #nav ul li {
+                width: 200px !important;
+                float: left;
+                text-align: center;
+                line-height: 40px;
+                height: 40px;
+            }
+
+            #nav {
+                height: 40px;
+            }
+
+            #pagecontent div {
+                float: left;
+                width: 33%;
+                height: 450px;
+                clear: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">header</header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">School</a></li>
+        </ul>
+    </nav>
+
+    <section id="leftbox">
+        <ul>
+            <li><a href="#">Morning</a></li>
+            <li><a href="#">Mid Morning</a></li>
+            <li><a href="#">Afternoon</a></li>
+            <li><a href="#">Night</a></li>
+            <li><a href="#">Late Night</a></li>
+        </ul>
+    </section>
+
+    <section id="pagecontent">
+        <div class="tod ttod">
+            <h1 id="dh">morning</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias possimus, exercitationem dolorem
+                natus culpa soluta voluptas consequatur deleniti quia autem nihil dolores similique ipsam, enim ratione,
+                deserunt error repudiandae laudantium perferendis ducimus accusantium non. Aspernatur expedita nesciunt,
+                facere rem ipsam reprehenderit hic officiis numquam assumenda non voluptatum eligendi ratione sit, quasi
+                itaque, voluptatibus error sint ipsa dolorem enim qui fugit! Et earum consectetur ipsa eligendi? Vel
+                asperiores a explicabo. Aperiam blanditiis alias soluta dolorem quis officiis deleniti possimus. Ipsa
+                asperiores sit aliquam officia harum vel, ab cum! Illo neque libero optio reiciendis dicta veritatis ex
+                ipsa nobis, numquam quos?</p>
+        </div>
+        <div class="tod ttod">
+            <h1 id="dh">Noon</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quas vero nemo ut saepe delectus cumque
+                ipsa dolores asperiores unde corporis quisquam alias voluptates, voluptatibus nostrum error id
+                repudiandae dicta molestiae ducimus. Quibusdam quisquam quam voluptate est, illo quas recusandae quidem
+                tempore. Iusto animi provident dicta architecto, quas voluptas odio incidunt amet. Nemo perferendis
+                suscipit facere asperiores, fugiat ipsa ex praesentium voluptatum quo, quas maxime nam dolor tempore!
+                Optio, at. Dolorem aut omnis praesentium. Aperiam dolor facilis rerum perferendis laboriosam?</p>
+        </div>
+        <div class="tod btod">
+            <h1 id="dh">Night</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo error, sed, quasi est
+                adipisci libero asperiores esse molestiae at ullam. Nulla eveniet adipisci tempora minima pariatur quam
+                natus, cumque, esse, et fuga magnam aut non placeat asperiores alias fugiat facere nam sed voluptate!
+                Fugiat totam fugit assumenda eligendi qui modi ut, exercitationem, porro amet blanditiis sed accusamus
+                quas labore reiciendis culpa laborum aperiam harum.</p>
+        </div>
+    </section>
+    <aside id="aside">aside</aside>
+    <footer id="footer">footer</footer>
+</body>
+
+</html>
