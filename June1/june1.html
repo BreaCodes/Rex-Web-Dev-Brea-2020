@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zooming</title>
+    <style>
+        body{ 
+            margin: 0px;
+            background-color: rgb(198, 217, 238);
+        }
+        #food {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            margin: 100px auto;
+            border: solid 10px rgb(216, 200, 216);
+            box-shadow: 0 0 20px rgb(15, 6, 15);
+        }
+
+        #food img {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+           /* transition-property: transforme;
+            transition-duration:3s ;*/
+            transition: transform 2s;
+            overflow: hidden;
+        }
+        #food:hover img{
+            transform: scale(1.3,1.3);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="food">
+
+        <img src="food.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
