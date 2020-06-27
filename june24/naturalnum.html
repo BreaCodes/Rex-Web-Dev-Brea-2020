@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h3>Java Script|Naturan #'s</h3>
+    </header>
+    <div id="data">
+        First
+        <input type="text" id="natnum" autofocus size=5> Natural Numbers
+        <button onclick="printNumber()">Find</button>
+
+    </div>
+    <section id="display"> </section>
+    <script>
+function printNumber()
+{
+let inputField=document.getElementById("natnum");
+let num = inputField.value;
+//alert(num)
+let res="";
+for(let i=1;i<=num;i++){
+    if(i==num){
+        res = `${res}${i}`
+    }
+    res= `${res}${i},`
+}
+document.getElementById('display').innerHTML = res;
+}
+    </script>
+</body>
+</html>

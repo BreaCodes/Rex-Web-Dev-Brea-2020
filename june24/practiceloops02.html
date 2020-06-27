@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1 *</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #title{
+            background:linear-gradient(25deg,rgb(45, 2, 58),rgb(0, 0, 0));
+            color:rgb(226, 189, 208);
+            padding:10px;
+        }
+        #title h2{
+            margin:5px 0px;
+        }
+        #box
+        {
+            background-color: purple;
+            margin: 25px 60px;
+            border: solid black 2px;
+            border-radius: 20px;
+            width: 280px;
+            font-size: 40px;
+            font-family: monospace;
+            padding: 10px;
+            box-shadow: 1 0 12px rgb(26, 15, 26);
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h2>Java Script | Practice * | 2</h2>
+    </div>
+    <section id="box"></section>
+
+<script>
+    let res = ''
+    for(let i=1;i<=10;i--)
+    {
+        for(let j=1;j<=i;j++)
+        {
+            res = res+'j'
+        }
+        res +='<br>'
+    }
+        document.getElementById('box').innerHTML=res
+        
+
+</script>
+    
+</body>
+</html>
